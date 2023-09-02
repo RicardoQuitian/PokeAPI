@@ -27,8 +27,8 @@ async function mostrarPokemones(url) {
   let html = "";
   objetoPokemon.arrayDePokemones.forEach((pokemon) => {
     let cardPokemon = `<div class='card'>
-                            <span>${pokemon.nombre}</span>
-                            <span>${pokemon.id}</span>
+                            <span>${pokemon.id}</span>                        
+                            <span>${pokemon.nombre}</span>                                                        
                             <span>${pokemon.tipos[0].type.name}</span>
                             <img class='card-image' src='${pokemon.imagen}'/>
                         </div>`;
